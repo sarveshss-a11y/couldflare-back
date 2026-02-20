@@ -1,0 +1,22 @@
+name = "business-manager-api"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# D1 Database binding
+[[d1_databases]]
+binding = "DB"
+database_name = "business-manager-db"
+database_id = "your-database-id-here"
+
+# Environment variables
+[vars]
+ENVIRONMENT = "production"
+
+# Production environment
+[env.production]
+name = "business-manager-api"
+
+# Development environment
+[env.development]
+name = "business-manager-api-dev"
+database_id = "your-dev-database-id-here"
